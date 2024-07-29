@@ -1,4 +1,4 @@
-/* written by ARKA.....Fufill your dreams.  Mine has come true...has yours??" */
+/* written by ARKA.....Fufill your dreams.  Mine is about to come true...has yours??" */
 
 #include <windows.h>
 #include <winable.h>
