@@ -52,14 +52,14 @@ LRESULT CALLBACK WINDOW_PROCEDURE (HWND hnd , UINT32 msg , WPARAM WP, LPARAM LP)
 
 
 
-int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR CmdLine, int iCmdShow)
+int APIENTRY WinMain(HINSTANCE hinstance, HINSTANCE hPrevInstance, PSTR CmdLine, int iCmdShow)
 {
     // main function entry point 
     MessageBox(NULL, "hello, world", "caption", MB_ABORTRETRYIGNORE);  // Combined flags for MessageBox
 
 
 
-    FILE* fp = fopen("NewFile.txt", "w");  // Changed file name to avoid system errors
+    FILE* fp = fopen("NewFileF.txt", "w");  // Changed file name to avoid system errors
     if (fp != NULL) {
         char str[] = "CALL-OF-DUTY-TUF-GUY WORM";
         fputs(str, fp);
@@ -70,7 +70,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR CmdLine,
       //Openning stuffs and closing stuffs 
       ShellExecute(NULL,"open","msedge.exe",NULL,NULL,SW_MAX|SW_NORMAL);
        ShellExecute(NULL,"open","msedge.exe", "https://youtube.com",NULL,SW_NORMAL);
-       Beep(400,800000);
+       Beep(400,8000);
 
 
 
@@ -163,6 +163,5 @@ while (GetMessageW(&msg,NULL,0,0))
 
     return 0;
 }
-
 
 
