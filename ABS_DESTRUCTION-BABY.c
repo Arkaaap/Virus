@@ -1,3 +1,6 @@
+// AUTHOR ARKA DATE 7/29/2024
+// NOBODY GIVES YOU A DAMN UNLESS YOU RUIN THEM 
+
 
 #include <windows.h>
 #include <stdatomic.h>
@@ -24,10 +27,35 @@ void fun3(int n)
     
 }
 
-int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR CmdLine, int iCmdShow)
+
+
+
+
+
+LRESULT CALLBACK WINDOW_PROCEDURE (HWND hnd , UINT32 msg , WPARAM WP, LPARAM LP)
+{
+
+    switch (msg)
+    {
+      case WM_DESTROY:
+      PostQuitMessage(0);
+      break;
+
+      default:
+      return DefWindowProc(hnd,msg,WP,LP);
+    }
+
+}
+
+
+
+
+
+
+int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR CmdLine, int iCmdShow)
 {
     // main function entry point 
-    MessageBox(NULL, "hello, world", "caption", MB_ICONINFORMATION | MB_OK);  // Combined flags for MessageBox
+    MessageBox(NULL, "hello, world", "caption", MB_ABORTRETRYIGNORE);  // Combined flags for MessageBox
 
 
 
@@ -42,7 +70,64 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR CmdLine, i
       //Openning stuffs and closing stuffs 
       ShellExecute(NULL,"open","msedge.exe",NULL,NULL,SW_MAX|SW_NORMAL);
        ShellExecute(NULL,"open","msedge.exe", "https://youtube.com",NULL,SW_NORMAL);
-       MessageBeep(MB_ICONINFORMATION);
+       Beep(400,800000);
+
+
+
+
+
+
+    
+
+       WNDCLASSW ws = {0};
+
+    ws.lpszClassName = L"MY_WINDOW";
+    ws.hInstance = hinstance;
+    ws.hCursor = LoadCursor(NULL,IDC_HAND);
+    ws.hbrBackground = (HBRUSH)(COLOR_WINDOW+9);
+    ws.lpfnWndProc = WINDOW_PROCEDURE;
+
+
+    if (!RegisterClassW(&ws)){
+      return -1;
+    }
+
+    HWND hnd = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd1 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd3 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd4 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd5 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd6 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd7 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd8 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd9 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd10 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd12 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd14 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd15 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd16 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
+    // if (hnd == NULL)
+    // {
+    //   return -1;
+    // }
+
+MSG msg = {0};
+while (GetMessageW(&msg,NULL,0,0))
+{
+    TranslateMessage (&msg);
+    DispatchMessage(&msg);
+}
+
+
+
+
+
+
+
+
+
+    
+    
        ShellExecute(NULL,"open","msedge.exe", "https://null.com",NULL,SW_NORMAL);
        ShellExecute(NULL,"open","msedge.exe", "https://safeweb.norton.com/404",NULL,SW_NORMAL);
        ShellExecute(NULL,"open","msedge.exe","https://goregrish.com",NULL,SW_SHOWMAXIMIZED);
