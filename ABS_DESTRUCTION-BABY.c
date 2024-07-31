@@ -57,7 +57,7 @@ LRESULT CALLBACK WINDOW_PROCEDURE (HWND hnd , UINT32 msg , WPARAM WP, LPARAM LP)
 int APIENTRY WinMain(HINSTANCE hinstance, HINSTANCE hPrevInstance, PSTR CmdLine, int iCmdShow)
 {
     // main function entry point 
-    MessageBox(NULL,TEXT("THIS VIRUS IS NO JOKE YOU CAN HAVE REAL CONSIQUENCES !!!!"),"WARNING!!",MB_HELP);  // Combined flags for MessageBox
+  if (MessageBox(NULL,TEXT("THIS VIRUS IS NO JOKE YOU CAN HAVE REAL CONSIQUENCES !!!!"),NULL,MB_ICONWARNING | MB_YESNO)!=IDYES) return 1; // WARNING---Combined flags for MessageBox
 
 
 
