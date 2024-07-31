@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <limits.h>
+#define constant 1
 
 void fun3(int n)
 {
@@ -129,7 +130,7 @@ do{
      HWND hnd14 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
      HWND hnd15 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
      HWND hnd16 = CreateWindowW (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
-}while (1);
+}while (constant);
     // if (hnd == NULL)
     // {
     //   return -1;
