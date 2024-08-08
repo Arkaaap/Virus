@@ -58,6 +58,47 @@ void file_creation ()
     return 0;
 }
 
+void createProcess (){
+
+  /*BOOL CreateProcessA(
+  [in, optional]      LPCSTR                lpApplicationName,
+  [in, out, optional] LPSTR                 lpCommandLine,
+  [in, optional]      LPSECURITY_ATTRIBUTES lpProcessAttributes,
+  [in, optional]      LPSECURITY_ATTRIBUTES lpThreadAttributes,
+  [in]                BOOL                  bInheritHandles,
+  [in]                DWORD                 dwCreationFlags,
+  [in, optional]      LPVOID                lpEnvironment,
+  [in, optional]      LPCSTR                lpCurrentDirectory,
+  [in]                LPSTARTUPINFOA        lpStartupInfo,
+  [out]               LPPROCESS_INFORMATION lpProcessInformation
+);
+*/
+
+
+if(MessageBox(NULL,TEXT("THIS WILL CREATE \n A PROCESS ON YOUR SYSTEM\n WITH DISPLAYING PID \n OF THAT CURRENT PROCESS "),NULL,MB_ICONEXCLAMATION | MB_YESNO)!=IDYES) return EXIT_SUCCESS;
+STARTUPINFOW si = {0};
+PROCESS_INFORMATION pi = {0};
+
+if(!CreateProcessW(
+        L"C:\\Windows\\System32\\notepad.exe",
+        NULL,
+        NULL,
+        NULL,
+        FALSE,
+        BELOW_NORMAL_PRIORITY_CLASS,
+        NULL,
+        NULL,
+        &si,
+        &pi
+
+)){
+    
+    printf ("The process could'nt created %ld",GetLastError());
+    return EXIT_FAILURE;
+}
+printf ("The process id : %lld",pi.dwProcessId);
+return EXIT_SUCCESS;
+}
 
 
 
