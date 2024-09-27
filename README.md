@@ -1,4 +1,5 @@
 # Virus
+Hi i'm Arka a student of 3'rd sem in cse branch I like to make cool stuffs So I'm making this repository. This repo is no joke full of malwares source code and exe's are there most of them are very destructive Made by me. I suggest you to first know what are those programmes then might run it on your pc. S@y0n@R@.
 
 
 
